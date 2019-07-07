@@ -1,0 +1,113 @@
+* {
+
+	padding: 0;
+	margin: 0;
+}
+
+html {
+
+	overflow-x: hidden;
+}
+
+body {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+	.container1 {
+		
+		display: flex;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		z-index: 1;
+		margin: 10%;
+        max-width: 800px;
+
+
+		
+	}
+
+    h1 {
+
+        font-size: 2em;
+        font-family: 'Dancing Script', cursive;
+        color: black;
+        padding: 20px;
+        text-align: center;
+
+    }
+
+
+	#c-slider {
+
+	    width: 100%;
+	    max-width: 2500px;
+	    position: relative;
+	    overflow: hidden;
+
+	}
+
+	#slider {
+
+	    display: flex;
+	    width: 1500%;
+
+	}
+
+	#slider section {
+
+	    width: 100%;
+
+	}
+
+
+	#slider img {
+
+	    width: 100%;
+	    
+	}
+
+	#btn-prev, #btn-next {
+	    width: 40px:
+	    height: 40px; 
+	    position: absolute;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    line-height: 40px;
+	    font-size: 30px;
+	    font-weight: bold;
+	    text-align: center;
+	    font-family: monospace;
+	    cursor: pointer;
+	    color: white;
+	   
+	}
+
+
+
+	#btn-prev {
+	    left: 10px;
+	}
+
+	#btn-next {
+	    right: 10px;
+	}
+
+
+
+@media screen and (max-width: 800px) {
+
+    h1 {
+
+        font-size: 1.6em;
+    }
+
+    #btn-prev, #btn-next {
+
+        width: 10%;
+    }
+}

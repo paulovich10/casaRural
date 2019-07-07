@@ -1,0 +1,1326 @@
+
+* {
+
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+
+	overflow-x: hidden;
+}
+
+h1 {
+
+	font-family: 'Dancing Script', cursive;
+}
+
+h2, h3, h4, h5 {
+
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+
+}
+
+
+h2 {
+
+	text-align: center;
+	font-size: .9;
+	color: white;
+	
+}
+
+h3 {
+
+	font-weight: 400;
+	
+
+}
+
+h4 {
+
+	font-size: 1em;
+	font-weight: 400;
+	text-align: center;
+
+}
+
+h5 {
+
+	font-size: 1.2em;
+	padding-bottom: 50px;
+}
+
+
+p {
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: .9em;
+
+}
+
+h3 span {
+
+	font-weight: 700;
+
+}
+
+hr {
+
+    width: 50px;
+    border-bottom: 3px solid #bd9f86;
+    border-top: 0;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    
+}
+
+.hojas {
+
+	width: 10%;
+
+}
+
+/* ------- OVERLAY -------- */
+
+#overlay {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #fcfafa;
+    color: black;
+    line-height: 100vh;
+    text-align: center;
+    
+}
+
+#overlay p {
+
+	font-size: 1em;
+	position: absolute;
+	top: 10%;
+	left: 47%;
+}
+
+
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 4px solid #242F3F;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  animation: rotar 2s infinite ease;
+}
+
+.loader .relleno {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #242F3F;
+  animation: rellenar 2s infinite ease-in;
+}
+
+
+@keyframes rotar {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rellenar {
+  0% {
+    height: 0%;
+  }
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  75% {
+    height: 100%;
+  }
+  
+  100% {
+    height: 0%;
+  }
+}
+
+/*-----barra navegacion-----*/
+
+
+header div {
+
+	justify-content: center;
+	display: flex;
+}
+
+
+.barras {
+    
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: black;
+    z-index: 999;
+}
+
+
+#logo {
+
+	width: 15%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+nav {
+ 
+    z-index: 9999;
+	display: block;
+	
+}
+
+nav li {
+
+	position: relative;
+}
+
+nav ul {
+
+	height: 70px;
+}
+
+nav a::before {
+
+	content: '';
+	display: inline-block;
+	height: 3px;
+	width: 100%;
+	background-color: #fcd659;
+	position: absolute;
+	top: 0;
+	width: 0%;
+	transition: all ease-in-out .15s;
+
+}
+
+nav a:hover::before {
+
+	width: 70%;
+	
+}
+
+nav a:hover {
+
+	text-decoration: none;
+	color: #f5e6b5;
+}
+
+
+#menu {
+
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	justify-content: center;
+	text-transform: uppercase;
+	background-color: rgba(0,0,0,.7);
+	width: 100%;
+	position: fixed;
+	z-index: 50;
+}
+
+#menu img {
+
+	width: 20px;
+	height: 20px;
+	padding-top: 20px;
+	opacity: 0;
+
+
+}
+
+.titulo {
+
+    position: fixed;
+    font-size: 1em;
+    z-index: 999;
+	color: white;
+	text-align: center;
+	z-index: 999;
+	margin: auto;
+	display: block;
+	padding-top: 10px;
+
+}
+
+.titulo p {
+
+	font-family: 'Dancing Script', cursive;
+
+}
+
+nav li {
+	
+	list-style: none;
+	padding: 25px;
+	
+	
+}
+
+
+nav a {
+
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1em;
+   	font-weight: 400;
+
+
+}
+
+a {
+
+	text-decoration: none;
+	color: black;
+
+}
+
+
+
+
+/*---hero---*/
+
+
+#cabecera {
+
+	background: rgba(0,0,0,0) url("../img/background/habitacionCabecera.jpg") no-repeat fixed center / cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+h1 span {
+
+	color: #9d0d03;
+}
+
+#animacion-svg {
+
+	width: 450px; 
+	height: 300px;
+	background-color: rgba(255,255,255,.5);
+	opacity: .7;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	font-size: 2em;
+
+
+}
+
+#animacion-svg p {
+
+	font-family: 'Dancing Script', cursive;
+	font-size: .6em;
+
+}
+
+#interior-animacion {
+
+	width: 400px; 
+	height: 250px;
+	border-radius: 50%;
+}
+
+#interior-animacion img {
+
+	padding-top: 10px;
+}
+
+#telefIcon {
+
+	width: 10%;
+}
+
+
+
+/*-------descripcion-------*/
+
+.container2 {
+
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	flex-direction: row;
+	text-align: center; 
+	margin-top: 90px;
+	margin-bottom: 90px;
+
+	
+}
+
+
+.descripcion h2 {
+
+
+	margin-top: 40px;
+	letter-spacing: 2px;
+	color: #9e4c4c;
+} 
+
+.descripcion p {
+
+	padding: 40px;
+	line-height: 1.5;
+
+}
+
+.descripcion img {
+
+	width: 40%;
+	margin: auto;
+	display: block;
+	margin-top: 50px;
+	border-radius: 50%;
+
+}
+
+.descripcion {
+
+	opacity: 0;
+	transform: translateY(50px);
+	transition: all .5s
+}
+
+.descripcion.visible {
+
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+/*------Entorno------*/
+
+
+.container3 {
+
+	background: rgba(0,0,0,0) url("../img/background/paisaje.jpg") no-repeat fixed center / cover;
+	height: 80vh;
+	position:relative;
+	z-index: 1;
+
+}
+
+.container3::after {
+
+	content:"";
+	position:absolute;
+  	top:0;
+  	left:0;
+  	width:100%;
+  	height:100%;
+  	background:rgba(0,0,0,.2);
+  	z-index:-1;
+
+
+}
+
+
+.container3 header {
+
+
+	
+	padding: 60px 0px;
+	font-size: 1.5em;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	color: black;
+	letter-spacing: 3px;
+	background-color: #383636;
+
+
+}
+
+
+.container3 header h3 {
+
+	color: #fffffb;
+}
+
+.interior {
+
+	display: flex;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+
+}
+
+.interior p {
+
+	font-family: 'Roboto', "sans-serif";
+	padding-bottom: 40px;
+	color: white;
+	font-size: 1.4em;
+}
+
+.lateral, .lateral2 {
+
+	opacity: 0;
+	transform: translateX(50px);
+	transition: all .5s
+}
+
+.lateral.visible {
+
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+.lateral2.visible {
+
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+
+/*-----roller habitación-----*/
+
+.container8 header {
+
+	padding: 60px 0px;
+	font-size: 1.5em;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	color: #fffffb;
+	letter-spacing: 3px;
+	background-color: #383636;
+
+}
+
+#imagenCama {
+
+	height: 70vh;
+	background: rgba(0,0,0,0) url("../galeria/img/lino2.jpg") no-repeat fixed center / cover;
+	position:relative;
+	z-index: 1;
+	
+
+
+}
+
+#imagenCama::after {
+
+	content:"";
+	position:absolute;
+  	top:0;
+  	left:0;
+  	width:100%;
+  	height:100%;
+  	background:rgba(0,0,0,.3);
+  	z-index:-1;
+}
+
+
+
+.boton {
+
+	background-color: rgba(255,255,255,.8);
+	width: 13%;
+	text-align: center;
+	border-radius: 20px;
+
+
+}
+
+.boton:hover {
+
+	
+	transition: all .4s ease-in-out;
+	background-color: rgba(0,0,0,.7);
+
+
+}
+
+.boton:hover p {
+
+	color: white;
+	letter-spacing: 4px;
+	transition: all .4s ease-in-out;
+
+}
+
+.boton p {
+
+	color: black;
+	text-transform: uppercase;
+	padding: 15px;
+	font-size: .9em;
+	letter-spacing: 2px;
+
+
+}
+
+
+
+/*------mapa-------*/
+
+.container4 header {
+
+	padding: 60px 0px;
+	font-size: 1.5em;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	color: black;
+	letter-spacing: 3px;
+	background-color: white;
+
+
+}
+
+/*------contacto------*/
+
+.container5 header h3 {
+
+	border: solid 1px #fffffb;
+	padding: 10px 50px;
+
+}
+
+.container5 header {
+
+	
+	font-size: 1.3em;
+	text-align: center;
+	color: #fffffb;
+	letter-spacing: 3px;
+	padding-top: 50px;
+	padding-bottom: 70px;
+
+}
+
+.container5 {
+
+	background-color: #383636;;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+
+.container5 p {
+
+	color: white;
+	text-align: center;
+	font-size: 1em;
+	padding:70px 20px;
+	line-height: 1.5;
+}
+
+.container5 a {
+
+	color: rgb(245,221,165);
+	text-transform: underline;
+}
+
+#formulario .envoltorioContacto {
+
+	display: flex;
+	flex-flow: row wrap;	
+}
+
+.izquierda {
+
+	flex: 2;
+	padding-left: 2%;
+}
+
+.izquierda input {
+
+	width: 70%;
+}
+
+.derecha {
+
+	flex: 1;
+
+}
+
+.derecha input {
+
+	width: 70%;
+}
+
+#message {
+
+
+	padding-left: 2%;
+	max-width: 100%;
+	
+}
+
+.datedropper {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+
+.contenedorbotonEnvio {
+
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+	padding-bottom: 50px;
+
+
+}
+
+.contenedorbotonEnvio input {
+
+	
+	color: black;
+	border: solid 1px white;
+	border-radius: 10px;
+	padding: 10px 30px;
+	background-color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+
+
+input, textarea {
+
+	padding: 10px;
+	border-bottom: solid 1px white;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background-color: #383636;
+	color: white;
+	margin: 20px;
+	font-size: 1em;
+	font-family: 'Lato', 'sans-serif'
+
+}
+
+#message textarea {
+
+	width: 47%;
+	height: 60%;
+
+}
+
+#politicaDatos {
+
+	display: flex;
+	 color: white;
+	 text-transform: none;
+	 justify-content: center;
+	 align-content: center;
+	 padding-top: 80px;
+	 align-items: center;
+
+	 
+} 
+
+#politicaDatos a {
+
+	color: white;
+	text-decoration: underline;
+} 
+
+.fecha {
+
+	padding-top: 80px;
+	width: 85%;
+} 
+
+#ui-datepicker-div {
+
+	background-color: rgba(250, 250, 250, 2);
+	width: auto;
+}
+
+.ui-datepicker-header {
+  background: url('../img/calendario/dark_leather.png') repeat 0 0 #d5c9d3;
+  color: #e0e0e0;
+  font-weight: bold;
+  -webkit-box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, 2);
+  -moz-box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, .2);
+  box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, .2);
+  text-shadow: 1px -1px 0px #000;
+  filter: dropshadow(color=#000, offx=1, offy=-1);
+  line-height: 30px;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #111;
+}
+
+.ui-datepicker {
+  width: 216px;
+  height: auto;
+  margin: 5px auto 0;
+  font: 9pt Arial, sans-serif;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+}
+
+.ui-datepicker a {
+  text-decoration: none;
+}
+
+.ui-datepicker table {
+  width: 100%;
+}
+
+.ui-datepicker-title {
+  text-align: center;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  background-image: url('../img/arrow.png');
+  background-repeat: no-repeat;
+  line-height: 600%;
+  overflow: hidden;
+}
+
+.ui-datepicker-prev {
+  float: left;
+  background-position: center -30px;
+}
+.ui-datepicker-next {
+  float: right;
+  background-position: center 0px;
+}
+
+.ui-datepicker thead {
+  background-color: #f7f7f7;
+  background-image: -moz-linear-gradient(top,  #f7f7f7 0%, #f1f1f1 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#f1f1f1));
+  background-image: -webkit-linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+  background-image: -o-linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+  background-image: -ms-linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+  background-image: linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f1f1f1',GradientType=0 );
+  border-bottom: 1px solid #bbb;
+}
+
+.ui-datepicker th {
+  text-transform: uppercase;
+  font-size: 6pt;
+  padding: 5px 0;
+  color: #666666;
+  text-shadow: 1px 0px 0px #fff;
+  filter: dropshadow(color=#fff, offx=1, offy=0);
+}
+
+.ui-datepicker tbody td {
+  padding: 0;
+  border-right: 1px solid #bbb;
+}
+.ui-datepicker tbody td:last-child {
+  border-right: 0px;
+}
+
+.ui-datepicker tbody tr {
+  border-bottom: 1px solid #bbb;
+}
+.ui-datepicker tbody tr:last-child {
+  border-bottom: 0px;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #666666;
+  text-shadow: 1px 1px 0px #fff;
+  filter: dropshadow(color=#fff, offx=1, offy=1);
+}
+.ui-datepicker-calendar .ui-state-default {
+  background: #ededed;
+  background: -moz-linear-gradient(top,  #ededed 0%, #dedede 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#dedede));
+  background: -webkit-linear-gradient(top,  #ededed 0%,#dedede 100%);
+  background: -o-linear-gradient(top,  #ededed 0%,#dedede 100%);
+  background: -ms-linear-gradient(top,  #ededed 0%,#dedede 100%);
+  background: linear-gradient(top,  #ededed 0%,#dedede 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#dedede',GradientType=0 );
+  -webkit-box-shadow: inset 1px 1px 0px 0px rgba(250, 250, 250, .5);
+  -moz-box-shadow: inset 1px 1px 0px 0px rgba(250, 250, 250, .5);
+  box-shadow: inset 1px 1px 0px 0px rgba(250, 250, 250, .5);
+}
+.ui-datepicker-unselectable .ui-state-default {
+  background: #f4f4f4;
+  color: #b4b3b3;
+}
+
+.ui-datepicker-calendar .ui-state-hover {
+  background: #f7f7f7;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+  background: #6eafbf;
+  -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+  -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+  color: #e0e0e0;
+  text-shadow: 0px 1px 0px #4d7a85;
+  filter: dropshadow(color=#4d7a85, offx=0, offy=1);
+  border: 1px solid #55838f;
+  position: relative;
+  margin: -1px;
+}
+
+/*-alerta-*/
+
+#alerta {
+    background: #df7777;
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    transition: all .5s;
+    color: rgb(50,50,50);
+    transform: translateX(-100%);
+}
+
+#alerta.visible{
+    transform: translateX(0);
+}
+
+ #mensaje {
+    padding: 12px 10px;
+    border: 2px dashed rgb(50,50,50);
+    margin: 10px 35px;
+    text-align: center;
+    width: 300px;
+    font-size: 14px;
+    line-height: 16px
+}
+
+  #mensaje p {
+
+  	font-family: 'Lato', 'sans-serif';
+
+  }
+
+ 
+
+/*------tarifas--------*/
+
+
+
+.container6 header {
+
+	padding: 60px 0px;
+	font-size: 1.5em;
+	text-align: center;
+	color: black;
+	letter-spacing: 3px;
+	background-color: #f5dda5;
+
+
+}
+
+.container6 {
+
+	padding-bottom: 90px;
+}
+
+.envoltorioTarifas ul {
+
+	padding-top: 140px;
+	text-align: center;
+	line-height: 1.5;
+
+}
+
+.envoltorioTarifas ul li {
+
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+
+/*------footer------*/
+
+
+footer {
+
+	background-color: #f5dda5;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+
+
+}
+
+.wrapper {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+
+}
+
+.wrapper p {
+
+	font-size: .8em;
+}
+
+.wrapper > div {
+
+	padding: 40px;
+
+}
+
+.wrapper div ul {
+
+	padding-top: 20px;
+}
+
+
+.wrapper ul li a {
+
+	text-decoration: none;
+	color: black;
+
+}
+
+
+
+.wrapper h4 {
+
+	margin-bottom: 20px;
+
+}
+
+.wrapper ul {
+
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+
+} 
+
+
+
+.terminos {
+
+	text-align: center;
+	background-color: #f5dda5;
+	padding-bottom: 30px;
+
+}
+
+.panelFechas {
+
+	background-color: white;
+	font-family: arial;
+    font-size: 14px;
+    margin: 0 auto;
+    min-height: 96vh;
+    width: 100%;
+    font-family: Helvetica;
+}
+
+button {
+	width: 20%
+    overflow: auto;
+    background: #ca6c38 none repeat scroll 0 0;
+    border: medium none;
+    color: inherit;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 1px;
+    outline: medium none;
+    padding: 15px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    border: 3px solid #ca6c38;
+    color: white;
+
+
+}
+
+
+
+@media screen and (max-width: 970px) {
+
+nav a {
+
+	font-size: .8em;
+}
+
+nav a:hover::before {
+
+	display: none;
+	
+}
+
+
+
+.titulo {
+
+	font-size: .9em;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	margin-left: 10px;
+
+}
+
+
+.container2 {
+
+
+	flex-direction: column;
+
+}
+.container2 img {
+
+
+	width: 10%;
+}
+
+.boton p {
+
+	font-size: .9em;
+	display: block;
+	margin: auto;
+
+}
+
+.boton {
+
+	width: 100%;
+	border-radius: 1px;
+}
+
+.descripcion img {
+
+	width: 25%;
+}
+
+.descripcion p {
+
+	font-size: 1em;
+}
+
+.mapa {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.mapa iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+
+
+
+#menu  {
+
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	position: fixed;
+	flex-flow: column;
+	height: 70vh;
+	transform: translateX(-100%);
+    transition: transform .5s;
+    width: 100%
+    
+}
+
+.titulo {
+
+	background-color: rgba(0,0,0,.8);
+	width: 90px;
+	height: 70px;
+	color: white;
+	border-radius: 50%;
+	font-family: ''
+}
+
+#menu img {
+
+	opacity: 1;
+
+}
+
+nav li {
+
+	font-size: .8em;
+
+}
+
+nav a:hover::before {
+
+	width: 35%;
+	
+}
+
+#menu.abierto {
+    transform: translateX(0);
+    padding-top: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    z-index: 999;
+}
+
+#logo {
+
+	display: none;
+}
+
+.barras {
+
+	display: block;
+
+}
+
+#animacion-svg {
+
+	width: 300px;
+	height: 200px;
+}
+
+#animacion-svg p {
+
+	font-size: .6em;
+	padding-top: 0px;
+}
+
+#telefIcon {
+
+	width: 5%;
+	padding-bottom: 0px;
+}
+
+h1, h3 {
+
+	font-size: .9em;
+}
+
+h2 {
+
+	font-size: 1em;
+}
+	
+
+.descripcion p {
+
+	font-size: .8em;
+}
+
+#formulario .envoltorioContacto {
+
+	display: flex;
+	flex-direction: column;
+}
+
+.fecha {
+
+	width: 60%;
+}
+
+.datedropper {
+
+	display: flex;
+	flex-direction: column;
+}
+
+
+.wrapper {
+
+	display: flex;
+	flex-direction: column;
+	font-size: .9em;
+	text-align: center;
+	padding: 10px;
+}
+
+
+
+.interior p {
+
+	font-size: 1.1em;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+}
+
+}
+
+
+
+
+
+
